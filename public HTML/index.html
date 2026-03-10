@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
@@ -21,14 +20,13 @@
             </button>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="../public HTML/about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="../public HTML/projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="../public HTML/contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <main>
         <section class="hero">
             <div class="hero-container">
@@ -39,8 +37,13 @@
                         </div>
                     </div>
                     <div class="hero-text">
-                        <h1 class="hero-name">Goodness Emmanuel</h1>
+                        <div class="availability-badge">
+                            <span class="availability-dot"></span>
+                            Available for work
+                        </div>
+                        <h1 class="hero-name">Goodness<br>Emmanuel</h1>
                         <p class="hero-title">Front-End Developer</p>
+                        <div class="hero-divider"></div>
                         <p class="hero-statement">Crafting thoughtful, accessible web experiences with precision and care. Every pixel matters, every interaction counts.</p>
                         <div class="hero-buttons">
                             <a href="projects.html" class="btn btn-primary">View Projects</a>
@@ -52,6 +55,21 @@
         </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-initials">GE</span>
+                <span class="footer-name">Goodness Emmanuel</span>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/goodnessemmanuel" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="footer-social-icon">in</span></a>
+                <a href="https://github.com/goodnessemmanuel" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="footer-social-icon">gh</span></a>
+                <a href="https://twitter.com/goodnessemmanuel" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><span class="footer-social-icon">tw</span></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Goodness Emmanuel. All rights reserved.</p>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
