@@ -1,9 +1,9 @@
-// ============================================================
+// 
 //  GOODNESS EMMANUEL — Portfolio Script
-// ============================================================
+// 
  
  
-// ── 1. PAGE LOADER ─────────────────────────────────────────
+// ── 1. PAGE LOADER ─
 // Shows a branded loading screen, then fades out
 const loader = document.createElement('div');
 loader.className = 'page-loader';
@@ -106,7 +106,7 @@ function setActiveNav() {
 setActiveNav();
  
  
-// ── 5. STICKY NAV SHADOW ON SCROLL ─────────────────────────
+// ── 5. STICKY NAV SHADOW ON SCROLL ─
 // Adds a subtle border/shadow to the navbar once user scrolls down
 const navbar = document.querySelector('.navbar');
 if (navbar) {
@@ -122,9 +122,9 @@ const typingEl = document.querySelector('.hero-title');
 if (typingEl) {
     const roles = [
         'Front-End Developer',
-        'UI / UX Enthusiast',
-        'Clean Code Advocate',
-        'Web Performance Nerd',
+        'UI/UX Driven',
+        'Clean and Scalable Code',
+        'Performance Optimized',
     ];
     let roleIndex   = 0;
     let charIndex   = 0;

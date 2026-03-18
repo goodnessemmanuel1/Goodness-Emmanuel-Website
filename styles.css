@@ -1,11 +1,11 @@
-/* ============================================================
+/* 
    GOODNESS EMMANUEL — Portfolio Stylesheet
    Aesthetic: Corporate & Polished — Black, White & Deep Navy
-   ============================================================ */
+    */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ── Reset & Base ─────────────────────────────────────────── */
+/* ─ Reset & Base ─ */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -43,8 +43,8 @@
     --font-body:    'Inter', -apple-system, sans-serif;
 
     --nav-h: 72px;
-    --radius: 2px;
-    --radius-lg: 4px;
+    --radius: 10px;
+    --radius-lg: 10px;
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -78,7 +78,7 @@ body::after {
 
 ::selection { background: var(--navy); color: #fff; }
 
-/* ── Navigation ───────────────────────────────────────────── */
+/* ─ Navigation ─ */
 .navbar {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -168,7 +168,7 @@ body::after {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ── Hero ─────────────────────────────────────────────────── */
+/* ─ Hero ─ */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -384,7 +384,7 @@ body::after {
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Buttons ──────────────────────────────────────────────── */
+/* ─ Buttons ─ */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -430,7 +430,7 @@ body::after {
 
 .btn-small { padding: 9px 18px; font-size: 0.68rem; }
 
-/* ── Content Sections ─────────────────────────────────────── */
+/* ─ Content Sections ─ */
 .content-section {
     min-height: calc(100vh - var(--nav-h));
     padding: calc(var(--nav-h) + 64px) 0 80px;
@@ -466,7 +466,7 @@ body::after {
     background: linear-gradient(90deg, var(--navy-light), var(--navy-pale) 80%, transparent);
 }
 
-/* ── Content Card ─────────────────────────────────────────── */
+/* ─ Content Card ─ */
 .content-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -497,7 +497,7 @@ body::after {
     pointer-events: none;
 }
 
-/* ── About ────────────────────────────────────────────────── */
+/* ─ About ─ */
 .about-paragraph {
     font-family: var(--font-body);
     font-size: 0.97rem;
@@ -519,7 +519,7 @@ body::after {
     font-weight: 500;
 }
 
-/* ── Projects ─────────────────────────────────────────────── */
+/* ─ Projects ─ */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
@@ -623,7 +623,7 @@ body::after {
     border-top: 1px solid var(--border);
 }
 
-/* ── Contact ──────────────────────────────────────────────── */
+/* ─ Contact ─ */
 .contact-intro {
     font-family: var(--font-body);
     font-size: 0.97rem;
@@ -713,7 +713,7 @@ body::after {
     color: var(--text-muted);
 }
 
-/* ── Mobile Navigation ────────────────────────────────────── */
+/* ─ Mobile Navigation ─ */
 @media (max-width: 768px) {
     .nav-toggle { display: flex; }
 
@@ -759,7 +759,7 @@ body::after {
     .content-card { padding: 28px 20px; }
 }
 
-/* ── Site Footer ──────────────────────────────────────────── */
+/* ─ Site Footer ─ */
 .site-footer {
     border-top: 1px solid var(--border);
     background: var(--surface);
@@ -767,7 +767,7 @@ body::after {
     z-index: 1;
 }
 
-/* ── Footer Top — Brand + Nav Links ──────────────────────── */
+/* ─ Footer Top — Brand + Nav Links ─ */
 .footer-top {
     max-width: 1200px;
     margin: 0 auto;
@@ -833,22 +833,17 @@ body::after {
     transition: transform 0.3s var(--ease-out);
 }
 
-.footer-nav-link:hover {
-    color: var(--text-primary);
-}
+.footer-nav-link:hover { color: var(--text-primary); }
+.footer-nav-link:hover::after { transform: scaleX(1); }
 
-.footer-nav-link:hover::after {
-    transform: scaleX(1);
-}
-
-/* ── Divider ──────────────────────────────────────────────── */
+/* ─ Divider ─ */
 .footer-divider {
     width: 100%;
     height: 1px;
     background: var(--border);
 }
 
-/* ── Footer Bottom — Social Icons + Copyright ─────────────── */
+/* ─ Footer Bottom — Social Icons + Copyright ─ */
 .footer-bottom {
     max-width: 1200px;
     margin: 0 auto;
@@ -897,31 +892,15 @@ body::after {
     text-align: center;
 }
 
-/* ── Mobile ───────────────────────────────────────────────── */
+/* ─ Footer Mobile ─ */
 @media (max-width: 640px) {
-    .footer-top {
-        padding: 36px 20px 32px;
-        gap: 24px;
-    }
-
-    .footer-nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px;
-    }
-
-    .footer-bottom {
-        padding: 28px 20px 32px;
-        gap: 20px;
-    }
-
-    .footer-social {
-        gap: 24px;
-    }
+    .footer-top { padding: 36px 20px 32px; gap: 24px; }
+    .footer-nav { flex-wrap: wrap; justify-content: center; gap: 4px; }
+    .footer-bottom { padding: 28px 20px 32px; gap: 20px; }
+    .footer-social { gap: 24px; }
 }
 
-
-/* ── Page Loader ──────────────────────────────────────────── */
+/* ─ Page Loader ─ */
 .page-loader {
     position: fixed;
     inset: 0;
@@ -980,8 +959,7 @@ body::after {
     to   { width: 100%; }
 }
 
-
-/* ── Page Transitions ─────────────────────────────────────── */
+/* ─ Page Transitions ─ */
 .page-transition {
     animation: page-enter 0.4s var(--ease-out) both;
 }
@@ -1000,15 +978,13 @@ body::after {
     to   { opacity: 0; transform: translateY(-10px); }
 }
 
-
-/* ── Navbar Scrolled State ────────────────────────────────── */
+/* ─ Navbar Scrolled State ─ */
 .navbar-scrolled {
     border-bottom-color: var(--border-hover);
     box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
 }
 
-
-/* ── Typing Cursor ────────────────────────────────────────── */
+/* ─ Typing Cursor ─ */
 .typing-cursor::after {
     content: '|';
     display: inline-block;
@@ -1023,8 +999,7 @@ body::after {
     50%       { opacity: 0; }
 }
 
-
-/* ── Scroll Fade-in Elements ──────────────────────────────── */
+/* ─ Scroll Fade-in Elements ─ */
 .fade-in-el {
     opacity: 0;
     transform: translateY(20px);
