@@ -117,7 +117,7 @@ Update all social URLs in the footer of each HTML file to match your actual hand
 | Platform | Placeholder URL |
 |----------|----------------|
 | GitHub | `https://github.com/goodnessemmanuel` |
-| LinkedIn | `https://linkedin.com/in/goodnessemmanuel` |
+| LinkedIn | `https://www.linkedin.com/in/emmanuelgoodness` |
 | TikTok | `https://tiktok.com/@goodnessemmanuel` |
 | Instagram | `https://instagram.com/goodnessemmanuel` |
  
