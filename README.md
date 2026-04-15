@@ -1,6 +1,6 @@
 # Goodness Emmanuel — Portfolio Website
  
-A personal portfolio website built with vanilla HTML, CSS, and JavaScript. Clean, corporate aesthetic using a black, white, and deep navy color scheme.
+The personal portfolio website of Goodness Emmanuel built with vanilla HTML, CSS, and JavaScript. Clean, corporate aesthetic using a black, white, and deep navy color scheme.
  
 ---
  
